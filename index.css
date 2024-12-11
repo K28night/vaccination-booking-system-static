@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+padding:0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+header{
+    background-color: rgba(212, 235, 248, 0.7); 
+padding:20px;
+color:#0A3981;
+font-family: "Headland One", serif;
+font-style: normal;
+font-size:30px;
+position: fixed;
+margin: auto;
+height: 100px;
+width: 100%;
+border-radius: 10px;
+}
+.header a {
+    text-decoration: none;
+    color: #1855b0;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth color change on hover */
+  }
+header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; /* Distance from the text */
+    width: 0;
+   font-size: -3px;
+    height: 2px; /* Thickness of the underline */
+    background-color: rgb(12, 112, 234);
+    transition: width 0.5s ease; /* Smooth width animation */
+  }
+  .header a:hover::after {
+    width: 100%; /* Full underline width */
+  }
+
+  /* Optional: Change link color on hover */
+  .header a:hover {
+    color:  rgb(12, 112, 234); /* Blue color on hover */
+  }
+ol{
+    list-style-type: none;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    margin-left:20px;
+    padding: 10px;
+}
+.header li{
+    margin-right: 20px;
+    text-decoration: none;
+    margin-left:20px;
+    margin-top: 12px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+}
+li:focus {
+    color: #ffffff; /* Text color */
+    background-color: #28ba07; /* Green background */
+    text-decoration: underline; /* Underline for emphasis */
+    border-radius: 5px; /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.body1{
+/* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    
+   height: 35em;
+   padding-top: 130px;
+   width: 100%;
+}
+.body1 img{
+    width: 35%;
+    height: max-content;
+    float: left;
+    margin-top: 10px;
+    
+   margin-left: 20px;
+   
+}
+.body1 img::after{
+    background-color: rgba(0, 0, 0, 0.5); /* Dark shade with 50% opacity */
+    z-index: 1;
+}
+.body1 p{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    margin-left: 45px;
+    color: rgba(0, 75, 139, 0.881);
+    font-weight: 200px;
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    
+}
+a{
+    text-decoration: none;
+    color: #0A3981;
+}
+header img{
+    width: 100px;
+    height: 100px;
+    float:left;
+margin-top: -20px;
+}
+a:hover{
+    color: #0c4fb4;
+}
+.sub{
+    background-color:#076affaf;
+}
+
+.btn{
+    background-color: #076affd0;
+    border: none;
+    width: 120px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.258);
+    height: 40px;
+    border-radius: 20px;
+}
+.btn:hover{  
+    width: 123px;
+    height: 43px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+.dos{
+    background-color: #0A3981;
+    height:40px;
+}
+.dosp{
+    text-align: center;
+   padding: 2px;
+  text-decoration: none;
+   font-size: 24px;}
+  
+.dosp a{
+    text-decoration: none;
+    color:white;
+}
+.appoint{
+    float: right;
+}
+
+.search {
+  color: #0c4fb4;
+ padding:20px;
+display: flex;
+margin-right: 20px;
+}
+
+.search:hover {
+    background-color: rgba(12, 79, 180, 0.3);
+    width: 50px; /* Final size of the circle */
+    height: 50px;
+    border-radius: 50%;
+ /* Set only once */
+  /* Optional: Matches height */
+   /* Creates a circular effect */
+  display: flex; /* Optional: For proper alignment */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  transition: all 0.2s ease;
+
+}
+  /* box-shadow: 0 0 15px 5px rgba(12, 79, 180, 0.5); Glowing circle */
+
+.appoint li{
+  margin-left: 14px;
+}
+
+.btn1 {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 500;
+    line-height: 1;
+    padding: 1em 1.5em;
+    position: relative;
+    transition: filter var(--motion-duration);
+  }
+  
+  .btn1:hover {
+    filter: brightness(1.1);
+  }
+  
+  .btn1:active {
+    filter: brightness(0.9);
+  }
+  
+  .btn1 > span {
+    display: block;
+    position: relative;
+    transition: transform var(--motion-duration) var(--motion-ease);
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    z-index: 1;
+  }
+  
+  .btn1:hover > span {
+    transform: scale(1.05);
+  }
+  
+  .btn1:active > span {
+    transform: scale(0.95);
+  }
+  
+  .btn1 > svg {
+    fill: #0c4fb4;
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+  
+  .btn1 > svg > path {
+    transition: var(--motion-duration) var(--motion-ease);
+  }
+  
+  .btn1:hover > svg > path {
+    d: path("M0,0 C0,-5 100,-5 100,0 C105,0 105,100 100,100 C100,105 0,105 0,100 C-5,100 -5,0 0,0");
+  }
+  
+  .btn1:active > svg > path {
+    d: path("M0,0 C30,10 70,10 100,0 C95,30 95,70 100,100 C70,90 30,90 0,100 C5,70 5,30 0,0");
+  }
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .header li {
+        margin-left: 10px; 
+        margin-right:10px;/* Smaller margin for smaller screens */
+      }
+      .body1 p{
+        font-size:30px;}
+      header img{
+          width: 80px;
+          height: 80px;
+          margin-top: 0.41px;
+       
+      }
+      .appoint li{
+          margin: 7px;
+      }
+}
+@media (max-width: 768px) { /* For tablets */
+    .header li {
+        margin-left: 5px; 
+        margin-right:5px;/* Very small margin for narrow screens */
+      }
+      .body1 p{
+        font-size:25px;
+      }
+      header img{
+          width: 70px;
+          height: 70px;
+          margin-top: 0.41px;
+       
+      }
+      .apponit li{
+          margin-left:3px;
+      }
+     /* Target devices with screen width <= 768px */
+        .search {
+          position: fixed; /* Fix the button to the viewport */
+          bottom: 6%; /* Position at the bottom */
+          right: 6%; /* Position at the left */
+          background-color:  rgb(38, 136, 222);
+          height: 30px; /* Equal height and width for a circle */
+          width: 30px;
+          border-radius: 50%;
+          color:aliceblue;
+         display: flex;
+         justify-content: center;
+         align-items:center;
+        }
+        .search:hover{display: none;}
+        .btn1{
+            display:none;
+        }
+        .header li{
+          font-size: 10px;
+        }
+      
+  }
+  
